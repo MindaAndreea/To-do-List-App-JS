@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do list App</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/55fb0d6d0f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <div class="alert" id="message"></div>
+    <h1>To do list</h1>
+    <form id="form-input">
+      <div class="input">
+        <input
+          type="text"
+          placeholder="Please enter task..."
+          id="input"
+          value=""
+        />
+        <button id="addTask">Add item</button>
+      </div>
+    </form>
+    <ul class="list">
+      <li class="list-item" data-type="all">
+        <a href="#" class="active">All</a>
+      </li>
+      <li class="list-item" data-type="todo">
+        <a href="#">To Do</a>
+      </li>
+      <li class="list-item" data-type="completed">
+        <a href="#">Completed</a>
+      </li>
+    </ul>
+    <ul class="tasks-list">
+      <li class="tasks-list-item">
+        <span>Task 1 </span>
+        <div class="icons">
+          <i class="fa-regular fa-square-check completedIcon"></i>
+          <i class="fa-regular fa-pen-to-square editIcon"></i>
+          <i class="fa-solid fa-trash-can deleteIcon"></i>
+        </div>
+      </li>
+      <li class="tasks-list-item">
+        <span>Task 2 </span>
+        <div class="icons">
+          <i class="fa-regular fa-square-check completedIcon"></i>
+          <i class="fa-regular fa-pen-to-square editIcon"></i>
+          <i class="fa-solid fa-trash-can deleteIcon"></i>
+        </div>
+      </li>
+    </ul>
     <script src="/script.js"></script>
   </body>
 </html>
