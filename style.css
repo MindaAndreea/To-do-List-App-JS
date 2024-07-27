@@ -94,6 +94,25 @@ h1 {
   margin-bottom: 20px;
 }
 
+.tasks-list-item.todo {
+  background-color: lightgray;
+}
+
+.tasks-list-item.completed {
+  background-color: lightgreen;
+}
+
+span[contenteditable="true"] {
+  border: 1px solid #ccc;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+span[contenteditable="true"]:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
 .icons i {
   cursor: pointer;
   margin-right: 10px;
